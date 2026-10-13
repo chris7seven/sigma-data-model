@@ -87,6 +87,9 @@ pages:
           - id: gB7m1K0WcB
             formula: CountDistinct([Order Number])
             name: Total Orders
+          - id: cM4rG1nXq7
+            formula: Sum([Cost]) / Sum([Price])
+            name: Cost Margin
         order:
           - inode-4oaI2we1tktrsjPGK0u0GS/ORDER_NUMBER
           - inode-4oaI2we1tktrsjPGK0u0GS/DATE
