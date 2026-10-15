@@ -1,14 +1,14 @@
 dataModelId: f07a5f2d-3fe6-429a-be31-f3d7d5018a66
 name: BIG_BUYS_POS (code test CS)
 url: https://staging.sigmacomputing.io/papercranestaging/data-model/BIG_BUYS_POS-code-test-CS-7jM57hepwMEKJP5GBFeniK
-documentVersion: 6
-latestDocumentVersion: 6
+documentVersion: 7
+latestDocumentVersion: 7
 ownerId: 0WGy1L8g59AsRZ6x7tN1Giyetf70E
 folderId: 3a8d11e9-6cff-43f2-b1c1-2974d9bf9370
 createdBy: 0WGy1L8g59AsRZ6x7tN1Giyetf70E
 updatedBy: 0WGy1L8g59AsRZ6x7tN1Giyetf70E
 createdAt: '2026-05-05T20:15:22.078Z'
-updatedAt: '2026-10-13T23:11:26.871Z'
+updatedAt: '2026-10-15T20:32:40.394Z'
 schemaVersion: 1
 pages:
   - id: efwfUoUYko
@@ -39,6 +39,8 @@ pages:
           - id: inode-4oaI2we1tktrsjPGK0u0GS/PRICE
             formula: '[BIG_BUYS_POS/Price]'
           - id: inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_TYPE
+            formula: '[BIG_BUYS_POS/Product Type]'
+          - id: TdMl0sAZzs
             formula: '[BIG_BUYS_POS/Product Type]'
           - id: inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_FAMILY
             formula: '[BIG_BUYS_POS/Product Family]'
@@ -108,6 +110,7 @@ pages:
           - inode-4oaI2we1tktrsjPGK0u0GS/COST
           - inode-4oaI2we1tktrsjPGK0u0GS/PRICE
           - inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_TYPE
+          - TdMl0sAZzs
           - inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_FAMILY
           - inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_LINE
           - inode-4oaI2we1tktrsjPGK0u0GS/BRAND
