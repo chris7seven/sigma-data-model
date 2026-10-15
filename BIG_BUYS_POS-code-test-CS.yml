@@ -1,14 +1,14 @@
 dataModelId: f07a5f2d-3fe6-429a-be31-f3d7d5018a66
 name: BIG_BUYS_POS (code test CS)
 url: https://staging.sigmacomputing.io/papercranestaging/data-model/BIG_BUYS_POS-code-test-CS-7jM57hepwMEKJP5GBFeniK
-documentVersion: 5
-latestDocumentVersion: 5
+documentVersion: 6
+latestDocumentVersion: 6
 ownerId: 0WGy1L8g59AsRZ6x7tN1Giyetf70E
 folderId: 3a8d11e9-6cff-43f2-b1c1-2974d9bf9370
 createdBy: 0WGy1L8g59AsRZ6x7tN1Giyetf70E
 updatedBy: 0WGy1L8g59AsRZ6x7tN1Giyetf70E
 createdAt: '2026-05-05T20:15:22.078Z'
-updatedAt: '2026-10-13T22:50:41.227Z'
+updatedAt: '2026-10-13T23:11:26.871Z'
 schemaVersion: 1
 pages:
   - id: efwfUoUYko
@@ -93,6 +93,12 @@ pages:
           - id: h4aTfVd6o9
             formula: CountDistinct([Order Number])
             name: Countdistinct of Orders
+          - id: jwqKDJGaR3
+            formula: Sum([Price])
+            name: Giga Revenue
+            format:
+              kind: number
+              formatString: $,.2f
         order:
           - inode-4oaI2we1tktrsjPGK0u0GS/ORDER_NUMBER
           - inode-4oaI2we1tktrsjPGK0u0GS/DATE
