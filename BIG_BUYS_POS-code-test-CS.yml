@@ -85,9 +85,6 @@ pages:
             formula: '[BIG_BUYS_POS/Customer Name]'
           - id: inode-4oaI2we1tktrsjPGK0u0GS/CUST_JSON
             formula: '[BIG_BUYS_POS/Cust Json]'
-          - id: gpAb3Xk9Qm
-            formula: '[BIG_BUYS_POS/Price] - [BIG_BUYS_POS/Cost]'
-            name: Gross Profit
         name: BIG_BUYS_POS (code test)
         metrics:
           - id: gB7m1K0WcB
