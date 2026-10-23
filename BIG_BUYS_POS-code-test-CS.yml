@@ -1,14 +1,14 @@
 dataModelId: f07a5f2d-3fe6-429a-be31-f3d7d5018a66
 name: BIG_BUYS_POS (code test CS)
 url: https://staging.sigmacomputing.io/papercranestaging/data-model/BIG_BUYS_POS-code-test-CS-7jM57hepwMEKJP5GBFeniK
-documentVersion: 13
-latestDocumentVersion: 13
+documentVersion: 14
+latestDocumentVersion: 14
 ownerId: 0WGy1L8g59AsRZ6x7tN1Giyetf70E
 folderId: 3a8d11e9-6cff-43f2-b1c1-2974d9bf9370
 createdBy: 0WGy1L8g59AsRZ6x7tN1Giyetf70E
 updatedBy: 0WGy1L8g59AsRZ6x7tN1Giyetf70E
 createdAt: '2026-05-05T20:15:22.078Z'
-updatedAt: '2026-10-20T16:18:49.756Z'
+updatedAt: '2026-10-20T16:23:31.302Z'
 schemaVersion: 1
 pages:
   - id: efwfUoUYko
@@ -38,17 +38,8 @@ pages:
             formula: '[BIG_BUYS_POS/Cost]'
           - id: inode-4oaI2we1tktrsjPGK0u0GS/PRICE
             formula: '[BIG_BUYS_POS/Price]'
-          - id: 3bHZe83Tra
-            formula: '[Price] - [Cost]'
-            name: Gross Profit
-            format:
-              kind: number
-              formatString: $,.2f
           - id: inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_TYPE
             formula: '[BIG_BUYS_POS/Product Type]'
-          - id: BXZklNrg8Z
-            formula: If([BIG_BUYS_POS/Product Type] = "Mobile Devices", "Phones", [Product Type])
-            name: Updated Product Type
           - id: inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_FAMILY
             formula: '[BIG_BUYS_POS/Product Family]'
           - id: inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_LINE
@@ -91,6 +82,24 @@ pages:
             formula: '[BIG_BUYS_POS/Customer Name]'
           - id: inode-4oaI2we1tktrsjPGK0u0GS/CUST_JSON
             formula: '[BIG_BUYS_POS/Cust Json]'
+          - id: Nw9zc74b3W
+            formula: Text([Cust Json].AGE_GROUP)
+            name: AGE_GROUP
+          - id: pZGGcO9BPT
+            formula: Text([Cust Json].CIVIL_STATUS)
+            name: CIVIL_STATUS
+          - id: IenstnPRF-
+            formula: Text([Cust Json].CUST_ADDRESS)
+            name: CUST_ADDRESS
+          - id: r4p96ava6z
+            formula: Text([Cust Json].CUST_AGE)
+            name: CUST_AGE
+          - id: wVc-izU6jN
+            formula: Text([Cust Json].CUST_CITY)
+            name: CUST_CITY
+          - id: z0ZE7cDZ47
+            formula: Text([Cust Json].CUST_COUNTY)
+            name: CUST_COUNTY
         name: BIG_BUYS_POS (code test)
         metrics:
           - id: gB7m1K0WcB
@@ -116,9 +125,7 @@ pages:
           - inode-4oaI2we1tktrsjPGK0u0GS/QUANTITY
           - inode-4oaI2we1tktrsjPGK0u0GS/COST
           - inode-4oaI2we1tktrsjPGK0u0GS/PRICE
-          - 3bHZe83Tra
           - inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_TYPE
-          - BXZklNrg8Z
           - inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_FAMILY
           - inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_LINE
           - inode-4oaI2we1tktrsjPGK0u0GS/BRAND
@@ -140,4 +147,10 @@ pages:
           - inode-4oaI2we1tktrsjPGK0u0GS/CUST_KEY
           - inode-4oaI2we1tktrsjPGK0u0GS/CUSTOMER_NAME
           - inode-4oaI2we1tktrsjPGK0u0GS/CUST_JSON
+          - Nw9zc74b3W
+          - pZGGcO9BPT
+          - IenstnPRF-
+          - r4p96ava6z
+          - wVc-izU6jN
+          - z0ZE7cDZ47
 kind: data-model
