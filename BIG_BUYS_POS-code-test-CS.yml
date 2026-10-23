@@ -40,9 +40,6 @@ pages:
             formula: '[BIG_BUYS_POS/Price]'
           - id: inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_TYPE
             formula: '[BIG_BUYS_POS/Product Type]'
-          - id: BXZklNrg8Z
-            formula: If([BIG_BUYS_POS/Product Type] = "Mobile Devices", "Phones", [Product Type])
-            name: Updated Product Type
           - id: inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_FAMILY
             formula: '[BIG_BUYS_POS/Product Family]'
           - id: inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_LINE
@@ -85,6 +82,24 @@ pages:
             formula: '[BIG_BUYS_POS/Customer Name]'
           - id: inode-4oaI2we1tktrsjPGK0u0GS/CUST_JSON
             formula: '[BIG_BUYS_POS/Cust Json]'
+          - id: Nw9zc74b3W
+            formula: Text([Cust Json].AGE_GROUP)
+            name: AGE_GROUP
+          - id: pZGGcO9BPT
+            formula: Text([Cust Json].CIVIL_STATUS)
+            name: CIVIL_STATUS
+          - id: IenstnPRF-
+            formula: Text([Cust Json].CUST_ADDRESS)
+            name: CUST_ADDRESS
+          - id: r4p96ava6z
+            formula: Text([Cust Json].CUST_AGE)
+            name: CUST_AGE
+          - id: wVc-izU6jN
+            formula: Text([Cust Json].CUST_CITY)
+            name: CUST_CITY
+          - id: z0ZE7cDZ47
+            formula: Text([Cust Json].CUST_COUNTY)
+            name: CUST_COUNTY
         name: BIG_BUYS_POS (code test)
         metrics:
           - id: gB7m1K0WcB
@@ -111,7 +126,6 @@ pages:
           - inode-4oaI2we1tktrsjPGK0u0GS/COST
           - inode-4oaI2we1tktrsjPGK0u0GS/PRICE
           - inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_TYPE
-          - BXZklNrg8Z
           - inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_FAMILY
           - inode-4oaI2we1tktrsjPGK0u0GS/PRODUCT_LINE
           - inode-4oaI2we1tktrsjPGK0u0GS/BRAND
@@ -133,4 +147,10 @@ pages:
           - inode-4oaI2we1tktrsjPGK0u0GS/CUST_KEY
           - inode-4oaI2we1tktrsjPGK0u0GS/CUSTOMER_NAME
           - inode-4oaI2we1tktrsjPGK0u0GS/CUST_JSON
+          - Nw9zc74b3W
+          - pZGGcO9BPT
+          - IenstnPRF-
+          - r4p96ava6z
+          - wVc-izU6jN
+          - z0ZE7cDZ47
 kind: data-model
