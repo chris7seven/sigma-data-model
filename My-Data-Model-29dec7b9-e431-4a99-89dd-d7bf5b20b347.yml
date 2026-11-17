@@ -27,6 +27,13 @@ pages:
             formula: '[PLUGS_ELECTRONICS_HANDS_ON_LAB_DATA/Cost]'
           - id: inode-3kb5TXjW54u4nZqm5VsHhj/PRICE
             formula: '[PLUGS_ELECTRONICS_HANDS_ON_LAB_DATA/Price]'
+          - id: GRGLcodzNg
+            formula: ([Price] - [Cost]) * [Quantity]
+            name: Profit
+            format:
+              kind: number
+              formatString: $,.2f
+              currencySymbol: $
           - id: inode-3kb5TXjW54u4nZqm5VsHhj/PRODUCT_TYPE
             formula: '[PLUGS_ELECTRONICS_HANDS_ON_LAB_DATA/Product Type]'
           - id: inode-3kb5TXjW54u4nZqm5VsHhj/PRODUCT_FAMILY
@@ -66,6 +73,7 @@ pages:
           - inode-3kb5TXjW54u4nZqm5VsHhj/QUANTITY
           - inode-3kb5TXjW54u4nZqm5VsHhj/COST
           - inode-3kb5TXjW54u4nZqm5VsHhj/PRICE
+          - GRGLcodzNg
           - inode-3kb5TXjW54u4nZqm5VsHhj/PRODUCT_TYPE
           - inode-3kb5TXjW54u4nZqm5VsHhj/PRODUCT_FAMILY
           - inode-3kb5TXjW54u4nZqm5VsHhj/PRODUCT_LINE
